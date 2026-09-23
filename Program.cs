@@ -131,3 +131,14 @@ string result5 = score5 switch {
     >= 10000 => "Мастер"
 };
 Console.WriteLine(result5);
+
+Console.WriteLine("Дополнительное задание");
+int num9 = 42;
+string result7 = num9 switch{
+    < 0 => "Отрицательное",
+    0 or 1 or 2 or 3 => "Маленькое число",
+    4 or 5 or 6 or 7 or 8 or 9 => "Однозначное число",
+    >= 10 and <= 99 => "Двузначное число",
+    >= 100 => "Трехзначное или больше"
+};
+Console.WriteLine(result7);
