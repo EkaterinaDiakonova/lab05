@@ -102,7 +102,23 @@ switch (day) {
     default: Console.WriteLine("Будни");break;
 }
 
+
+
 Console.WriteLine("Индивидуальное задание");
+Console.WriteLine("Вариант 3");
+Console.Write("Введите день недели: ");
+string day8 = Console.ReadLine();
+
+string result6 = day8 switch{
+    "понедельник" or "вторник" or "среда" or "четверг" or "пятница" => "9.00-21.00",
+    "суббота" => "10.00-20.00",
+    "воскресенье" => "10.00-18.00",
+    _ => "День не распознан"
+};
+Console.WriteLine(result6);
+
+
+
 Console.WriteLine("Вариант 7");
 
 int score5 = 1000;
